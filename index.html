@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Seatwork 2</title>
+
+	<style>
+		
+      body{
+            background-image: url(https://i.pinimg.com/736x/0f/6e/d5/0f6ed50ed0b14e9194ff5b5f07d6fcd5.jpg);
+          
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        table{
+        	 align-items: center;
+            justify-content: center;
+        }
+
+
+	</style>
+</head>
+<body>
+
+	<center>
+		<table>
+		<div class="col-md-6 " id="box">
+			<form class="form-group">
+
+				<label>Enter a value for x</label>
+				   <input type="number" class="form-control" id="numX">
+
+				   <label>Enter a value for y</label>
+				   <input type="number" class="form-control" id="numY">
+
+				     <button class="btn btn-success" onclick="Product()">Product</button>
+
+				    <button class="btn btn-success" onclick="Add()">Add</button>
+
+				    <button class="btn btn-success" onclick="Power()">Power</button>
+
+				    <button class="btn btn-success" onclick="Compare()">Compare</button>
+
+
+				
+			</form>
+
+		</div>
+
+	</table>
+	</center>
+
+    <div class="row">
+
+    	<table>
+	<script type="text/javascript">
+		function product(){
+			var numX=document.getElementById("numX").value;
+			var numY=document.getElementById("numY").value;
+			var prod=Number(numX) * Number(numY); 
+			window.alert('The product of x and Y is ' + prod);
+		}
+
+			function Add(){
+  		var numX = document.getElementById("numX").value;
+  		var numY = document.getElementById("numY").value;
+  		var sum  = Number(numX) + Number(numY); 
+
+
+  		window.alert('The sum of two numbers is :' + sum);
+  	}
+
+  	   function power(){
+
+  	   	var numX = document.getElementById("numX").value;
+  		var numY = document.getElementById("numY").value;
+  		var power= Number(numX)  ** Number(numY);
+
+        window.alert('When numX is raised to numY' + power);
+       }
+
+       function compare() {
+
+        var numX = document.getElementById("numX").value;
+  		var numY = document.getElementById("numY").value;
+  		var compare= Number(numX) == Number (numY);
+
+  		window.alert('numX is equal to numY' + compare);
+
+       }
+
+  	
+
+
+		
+	</script>
+</table>
+   </div>
+</body>
+</html>
